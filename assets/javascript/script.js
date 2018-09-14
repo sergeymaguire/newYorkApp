@@ -46,7 +46,7 @@ $(document).ready(function(){
             //clear old results
             $("#topArticles").empty();
             //console.log(result);
-            alert(numRecords);
+            // alert(numRecords);
 
             // loop through results
             // only create as many as numRecords
@@ -75,7 +75,11 @@ $(document).ready(function(){
     $("#searchBtn").on("click", function(){
         searchMain();
     });
-    // $("#clearBtn").on("click", clearFunction);
+    $("#clearBtn").on("click", function(){
+        location.reload();
+        // clear out #topArticles
+        //clear out entry fields
+    });
 
 
 })
