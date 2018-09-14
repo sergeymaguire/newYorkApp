@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+
 
 <head>
+        <html lang="en">
     <meta charset="UTF-8">
     <title>SPACE TRIVIA</title>
     <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
@@ -22,31 +22,53 @@
             </div>
         </div>
 
-
-        <div class="col-12">
-            <div class="card">
-                <h3>Search Parameters</h3>
-                <div class="row">
-                    <div class="btn" id="searchBtn">Search</div>
-                    <div class="btn" id="clearBtn">Clear Results</div>
-                </div>
+        <div class="container"id="background">
+        <form>
+            <div class="form-group">
+              <h3 for="exampleFormControlInput1" id="search">Search Term:</h3>
+              <input type="email" class="form-control" id="searchTerm" placeholder="">
             </div>
-        </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+              <select class="form-control" id="numberRecords">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Start Year (Optional):</label>
+                <input type="email" class="form-control" id="startYear" placeholder="">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleFormControlInput1">End Year (Optional):</label>
+                <input type="email" class="form-control" id="endYear" placeholder="">
+              </div>
+              <button type="button" class="btn btn-lg btn-primary" id="searchBtn" disabled>Primary button</button>
+                <button type="button" class="btn btn-secondary btn-lg" id="clearBtn" disabled>Button</button>
+            </div>
 
 
+            <br>
+            <br>
 
-        <div class="row justify-content-center">
+            <div class="container">
+           <div class="row justify-content-center">
             <div class="col-12">
-                <div class="card" id="SunEarth">
+                <div class="card">
                     <h3>Top Articles</h3>
+                    <div id="topArticles"></div>
                 </div>
             </div>
         </div>
+    </div>
  
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
