@@ -55,7 +55,7 @@ $(document).ready(function(){
                 var newArticle = $("<div>");
                 newArticle.attr("class", "articleResult");
                 newArticle.append($("<h2>").text(result.response.docs[i].headline.main));
-            //newArticle.append($("<p>").text(result.response.docs[i].byline.original));
+            newArticle.append($("<p>").text(result.response.docs[i].byline.original));
 // alert("here");
 
                 //append each article to $("#topArticles")

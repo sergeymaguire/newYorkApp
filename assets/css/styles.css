@@ -10,5 +10,18 @@ h3{
 }
 
 .articleResult{
+    background-color:lawngreen;
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+.articleResult:hover{
+    background-color:grey;
+    font-size: 120%;
+    cursor: pointer;
+}
+h2:hover{
+    background-color:grey;
+ 
+    cursor: pointer; 
 }
